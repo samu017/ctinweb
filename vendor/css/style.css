@@ -1,0 +1,12 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	-webkit-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
+	-moz-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
+	-o-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
+	-ms-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
+    background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
+	
+}
