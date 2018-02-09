@@ -1,12 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 *{
 	margin:0;
 	padding: 0;
 }
-body{
-	-webkit-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
-	-moz-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
-	-o-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
-	-ms-background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
-    background-color: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) no-repeat center center;
-	
+html{
+	font-family: 'Roboto', sans-serif;
+	s
+}
+.colors{
+	background: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) ;
+	-webkit-background: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) ;
+	-moz-background: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) ;
+	-o-background: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) ;
+	-ms-background: linear-gradient(to right,rgb(16,176,190), rgb(1,20,65) , rgb(236,68,97)) ;
+}
+nav{
+	color:white ;
+	z-index: 2;
+}
+ul li a{
+	color: white;
+	padding: 0.5rem 1rem;
+	display: block;
+}
+a:hover, a:focus, a:active{
+	text-decoration: none!important;
+	color: rgba(255,255,255,.5)!important;
+}
+.ctinlogo{
+	width: 70px;
+	height: 30px;
+	overflow: hidden;
+}
+/*background*/
+/*@-webkit-keyframes BACK-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to { 
+		left: -10000px;
+		top: -2000px;
+	}
+}
+
+#background {
+	background: black url(../img/Fondo.png) repeat 5% 5%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+		
+	-webkit-animation-name: BACK-MOVE;
+	-webkit-animation-duration: 500s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: BACK-MOVE;
+	-moz-animation-duration: 500s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-name: BACK-MOVE;
+	-o-animation-duration: 500s;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-name: BACK-MOVE;
+	-ms-animation-duration: 500s;
+	-ms-animation-timing-function: linear;
+	-ms-animation-iteration-count: infinite;
+ 
+}
+*/
+.circulo {
+     width: 400px;
+     height: 400px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     border-radius: 50%;
+     z-index: 20;
+     position: absolute!important;
+     top: 25%;
+     left: 35%;
+     right: 0;
+	-webkit-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	-moz-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	-ms-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	-o-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+}
+img.logoinicial{
+	/*width: 470px;*/
+	height: 320px;
+	position: absolute;
+	top: 10%; 
+	left: -7%;
+	right: 0;
+	bottom: 0;
+	z-index: 25;
+
+}
+div#one{
+	background-image: url('../img/Fondo.png');
+
+    /* Set a specific height */
+    min-height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#two{
+	width: 100%;
+}
+div#two.is-active {
+  background: tomato;
+}
+div#three{
+	width: 100%;
+	height: 700px;
+	background: red;	
+}
+div#three.is-active {
+  background: #006b77;
+}
+.top{
+	padding-top: 8%;
+}
+.ctin-sphere{
+    margin: 10% 10%;
+     width: 400px;
+     height: 400px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     border-radius: 50%;
+	-webkit-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	-moz-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	-ms-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	-o-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+	box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
+}
+.ictin{left: 7%!important;top: 18%!important;}
+.hr{
+
+}
+.parrafo{
+	margin: 20% 0 0 10% ;
 }
