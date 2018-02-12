@@ -165,3 +165,24 @@ h1{
     margin-right: 0!important;
     margin-left: 0!important; 
     }
+
+
+
+
+
+
+
+.caja{
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      background: #eee;
+
+      border: 20px solid transparent;
+
+      -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+      -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+      border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+
+      border-image-slice: 1;
+    }
