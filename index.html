@@ -348,7 +348,7 @@ plataformas.
 				<div class="col-md-6 ">
 					<div class="h2_form">
 						<h5 class=" ">Si cumples con estos requisitos, aplica a la convocatoria y únete a este gran equipo:</h5>
-						<form>
+						<form id="form_ctin">
 						  <div class="form-group">
 						    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Nombre">
 						  </div>
@@ -361,12 +361,13 @@ plataformas.
 						  <div class="form-group">
 						    <input type="email" class="form-control" id="email" placeholder="email">
 						  </div>
-						  <div class="form-group row">
+						<!--<div class="form-group row">
 						    <label class="col-sm-2 col-form-label" for="foto">Fotografía</label>
 						    <div class="col-sm-10">
 						    	<input type="file" class="form-control-file" id="foto">
 						    </div>
 						  </div>
+						-->
 						  <div class="form-group row">
 						    <label class="col-sm-2 col-form-label" for="school">Escuela: </label>
 						    <div class="col-sm-10">
@@ -381,7 +382,7 @@ plataformas.
 						    	</div>
 						  	</div>
 						  	<div class="col-sm-6">
-						  		<label class="col col-form-label" for="semestre">Semestre: </label>
+						  		<label class="col col-form-label" for="semestre" >Semestre: </label>
 						  		<div class="col">
 						    		<input type="text" class="form-control" id="semestre">
 						    	</div>
@@ -403,26 +404,23 @@ plataformas.
 						  </div>			
 						  <div class="form-group">
 						  	<label class="my-1 mr-2" for="area">Selecciona un área de interés:</label>
-							 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-							    <option selected>Selecciona</option>
-							    <option value="1">Diseño de experiencias UX/UI</option>
-							    <option value="2">Calidad QC</option>
-							    <option value="3">Desarrollo de Apps</option>
-							    <option value="4">Data Science</option>
-							    <option value="5">Infraestructura</option>
-							    <option value="6">CID</option>
+							 <select class="custom-select my-1 mr-sm-2" id="selectAreas">
+							    
 							  </select>
 						  </div>	
 						  <div class="form-group row">
-						    <label class="col-sm-4 col-form-label" for="cv">Adjunta tu CV: </label>
+						    <label class="col-sm-4 col-form-label" for="cv" >Adjunta tu CV: </label>
 						    <div class="col-sm-8">
 						    	<input type="file" class="form-control-file" id="cv">
 						    </div>
 						  </div>					  
-						     
-						  <button type="submit" class="btn btn-primary float-right">Submit</button>
+						  <!--<div class="g-recaptcha" data-sitekey="6LfDp0YUAAAAALRPYqBliPtWcohokqYLu096nPDr"></div>-->
+
+						  <button type="submit" class="btn btn-primary float-right" >Submit</button>
 						</form>
 					</div>
+
+			<div id="demo"></div>
 					<img src="vendor/img/convocatoria.png" alt="Convocatoria" class="convocatoria">
 				</div>
 			</div>
@@ -511,6 +509,7 @@ plataformas.
 	</div><!-- div de scroll-->
 
 	<script src="vendor/js/js.js"></script>
+	<script src="vendor/js/form.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -518,5 +517,7 @@ plataformas.
 
 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </body>
 </html>

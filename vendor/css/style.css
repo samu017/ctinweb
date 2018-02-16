@@ -319,3 +319,14 @@ img.convocatoria{
 		height: 280px;
 	}
 }
+@media screen and (max-width: 1152px){
+	img.logoinicial2,img.convocatoria{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 945px){
+	img.convocatoria{
+		width: 340px;
+	}
+}
