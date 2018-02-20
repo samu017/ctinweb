@@ -32,7 +32,7 @@
 	<meta name="msapplication-TileImage" content="vendor/img/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">	
 </head>
-<body>		
+<body data-spy="scroll" data-target=".navbar" data-offset="50">		
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top colors nav-pills">
 		  <a class="navbar-brand" href="#"><img class="img-fluid ctinlogo" src="vendor/img/logoctin.png" alt="CTIN"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,7 +127,7 @@
 				  <div class="card" data-toggle="modal" data-target="#modal6">
 				    <img class="card-img-top " src="vendor/img/cid.png" alt="CID">
 				    <div class="card-body">
-				      <h5 class="card-title">CID (Centro de Investigación y Desarrollo)</h5>
+				      <h5 class="card-title">CID (Centro de Investigación y Digital)</h5>
 				    </div>
 				  </div>
 				</div>
@@ -348,75 +348,101 @@ plataformas.
 				<div class="col-md-6 ">
 					<div class="h2_form">
 						<h5 class=" ">Si cumples con estos requisitos, aplica a la convocatoria y únete a este gran equipo:</h5>
-						<form id="form_ctin">
+						<form id="form_ctin"  class="needs-validation" novalidate>
+							<div class="form-row">
+							  <div class="col-md-12 mb-3">
+							    <input type="text" class="form-control" id="name validationCustom01" aria-describedby="name" placeholder="Nombre" required>
+								<div class="invalid-feedback">
+								Ingresar datos.</div>
+							  </div>
+							 </div>
 						  <div class="form-group">
-						    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Nombre">
+						    <input required type="text" class="form-control" id="appat validationCustom02" placeholder="Apellido paterno">
+							<div class="invalid-feedback">
+							Ingresar datos.</div>
 						  </div>
 						  <div class="form-group">
-						    <input type="text" class="form-control" id="appat" placeholder="Apellido paterno">
+						    <input required type="text" class="form-control" id="appmat validationCustom03" placeholder="Apellido materno">
+							<div class="invalid-feedback">
+							Ingresar datos.</div>
 						  </div>
 						  <div class="form-group">
-						    <input type="text" class="form-control" id="appmat" placeholder="Apellido materno">
-						  </div>
-						  <div class="form-group">
-						    <input type="email" class="form-control" id="email" placeholder="email">
+						    <input required type="email" class="form-control" id="email validationCustom04" placeholder="email">
+							<div class="invalid-feedback">
+							Ingresar datos.</div>
 						  </div>
 						<!--<div class="form-group row">
 						    <label class="col-sm-2 col-form-label" for="foto">Fotografía</label>
 						    <div class="col-sm-10">
-						    	<input type="file" class="form-control-file" id="foto">
+						    	<input required type="file" class="form-control-file" id="foto">
+						    	<div class="invalid-feedback">
+						    	Ingresar datos.</div>
 						    </div>
 						  </div>
 						-->
 						  <div class="form-group row">
-						    <label class="col-sm-2 col-form-label" for="school">Escuela: </label>
+						    <label class="col-sm-2 col-form-label" for="school validationCustom05">Escuela: </label>
 						    <div class="col-sm-10">
-						    	<input type="text" class="form-control" id="school">
+						    	<input required type="text" class="form-control" id="school validationCustom05">
+						    	<div class="invalid-feedback">
+						    	Ingresar datos.</div>
 						    </div>
 						  </div>
 						  <div class="form-group row">
 						  	<div class="col-sm-6">
-						  		<label class="col col-form-label" for="career">Carrera: </label>
+						  		<label class="col col-form-label" for="career validationCustom06">Carrera: </label>
 						  		<div class="col">
-						    		<input type="text" class="form-control" id="career">
+						    		<input required type="text" class="form-control" id="career validationCustom06">
+						    		<div class="invalid-feedback">
+						    		Ingresar datos.</div>
 						    	</div>
 						  	</div>
 						  	<div class="col-sm-6">
-						  		<label class="col col-form-label" for="semestre" >Semestre: </label>
+						  		<label class="col col-form-label" for="semestre validationCustom07" >Semestre: </label>
 						  		<div class="col">
-						    		<input type="text" class="form-control" id="semestre">
+						    		<input required type="text" class="form-control" id="semestre validationCustom07">
+						    		<div class="invalid-feedback">
+						    		Ingresar datos.</div>
 						    	</div>
 						  	</div>
 						  </div>
 						  <div class="form-group row">
-						    <label class="col-sm-2 col-form-label" for="languages">Idiomas: </label>
+						    <label class="col-sm-2 col-form-label" for="languages validationCustom08">Idiomas: </label>
 						    <div class="col-sm-10">
-						    	<input type="text" class="form-control" id="languages">
+						    	<input required type="text" class="form-control" id="languages validationCustom08">
+						    	<div class="invalid-feedback">
+						    	Ingresar datos.</div>
 						    </div>
 						  </div>
 						  <div class="form-group">
-						  	<label for="how">¿Cómo te enteráste de la convocatoria?:</label>
-						    <input type="text" class="form-control" id="how" aria-describedby="how">
+						  	<label for="how validationCustom09">¿Cómo te enteráste de la convocatoria?:</label>
+						    <input required type="text" class="form-control" id="how validationCustom09" aria-describedby="how">
+							<div class="invalid-feedback">
+							Ingresar datos.</div>
 						  </div>			
 						  <div class="form-group">
-						  	<label for="how">¿Por qué te gustaría ingresar con nosotros?:</label>
-						    <input type="text" class="form-control" id="why" aria-describedby="why">
+						  	<label for="why validationCustom10">¿Por qué te gustaría ingresar con nosotros?:</label>
+						    <input required type="text" class="form-control" id="why validationCustom10" aria-describedby="why">
+							<div class="invalid-feedback">
+							Ingresar datos.</div>
 						  </div>			
 						  <div class="form-group">
-						  	<label class="my-1 mr-2" for="area">Selecciona un área de interés:</label>
+						  	<label class="my-1 mr-2" for="selectAreas ">Selecciona un área de interés:</label>
 							 <select class="custom-select my-1 mr-sm-2" id="selectAreas">
 							    
 							  </select>
 						  </div>	
 						  <div class="form-group row">
-						    <label class="col-sm-4 col-form-label" for="cv" >Adjunta tu CV: </label>
+						    <label class="col-sm-4 col-form-label validationCustom12" for="cv" >Adjunta tu CV: </label>
 						    <div class="col-sm-8">
-						    	<input type="file" class="form-control-file" id="cv">
+						    	<input required type="file" class="form-control-file" id="cv validationCustom12">
+						    	<div class="invalid-feedback">
+						    	Ingresar datos.</div>
 						    </div>
 						  </div>					  
 						  <!--<div class="g-recaptcha" data-sitekey="6LfDp0YUAAAAALRPYqBliPtWcohokqYLu096nPDr"></div>-->
 
-						  <button type="submit" class="btn btn-primary float-right" >Submit</button>
+						  <button type="submit" class="btn btn-primary float-right" id="send_form">Enviar</button>
 						</form>
 					</div>
 
@@ -514,9 +540,6 @@ plataformas.
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<script	src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </body>
