@@ -7,8 +7,8 @@ body {
 	padding: 0;
 }
 html{
-	font-family: 'Roboto', sans-serif;
-	s
+	font-family: Roboto, sans-serif;
+	
 }
 .colors{
 	background: linear-gradient(to right,rgb(16,176,190),   rgb(1,20,65) , rgb(236,68,97)) ;
@@ -318,10 +318,16 @@ img.convocatoria{
 	img.logoinicial{
 		height: 280px;
 	}
+	img.convocatoria{
+		width: 300px;
+	}
 }
 @media screen and (max-width: 1152px){
 	img.logoinicial2,img.convocatoria{
 		width: 400px;
+	}
+	img.convocatoria{
+		width: 360px;
 	}
 }
 
@@ -330,3 +336,32 @@ img.convocatoria{
 		width: 340px;
 	}
 }
+@media screen and (min-width: 856px) and (max-width: 948px){
+	.faq_img{
+		width: 380px;
+	}
+}
+@media screen and (min-width: 765px) and (max-width: 855px){
+	img.convocatoria{
+		width: 260px;
+	} 
+	.faq_img{
+		width: 330px;
+		margin-top: 100px;
+	}		
+	.footer img:nth-child(odd){
+		width:130px!important; 
+	}
+}
+@media screen and (max-width: 765px){
+	footer{
+		color: white;
+	}
+	.footer img:nth-child(odd){
+		margin-top: 5%!important;
+	}
+}
+
+ #alert1,#alert2{
+ 	display: none;
+ }
