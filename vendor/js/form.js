@@ -27,53 +27,37 @@
        		var how = document.getElementById('validationCustom09').value;
        		var why = document.getElementById('validationCustom10').value;
        		var areaId = document.getElementById('selectAreas').value;
-       		var cv = new FormData();
-       		/*FILE UPLAD*/
-       		document.querySelector('#validationCustom11').addEventListener('change', function(e) {
-	  			var file = this.files[0];
-	  			
-	  			cv.append("validationCustom11", file);
-				 xhttp.open('POST', 'http://localhost:8000/api/requests', true);
-				  xhttp.upload.onprogress = function(e) {
-				    if (e.lengthComputable) {
-				      var percentComplete = (e.loaded / e.total) * 100;
-				      console.log(percentComplete + '% uploaded');
-				    }
-				  };	  			
-				 xhttp.onload = function() {
-				    if (this.status == 200) {
-				      var resp = JSON.parse(this.response);
-				      console.log('Server got:', resp);
-				      var pdf = document.createElement('pdf');
-				      pdf.src = resp.dataUrl;
-				      document.body.appendChild(pdf);
-				    };
-				  };
-			},false);
+       		var url_string = "file:///home/samu/Escritorio/ctin/index.html?r=success"; 
+			var url = new URL(url_string);
+			var r = url.searchParams.get("r");
 
-       		/****END*****/
-
-       		//var expresion =/\w+@\w+\.+[a-z]/;;
        		//console.log(areaId);
        		xhttp.open("POST","http://localhost:8000/api/requests",true);
        		xhttp.setRequestHeader('Content-type','application/json');
 
        		xhttp.onload = function(){
-       			console.log(this.responseText);
+       			//console.log(r);
+       			//console.log(this.responseText);
 	       		if (xhttp.status == 400) {
 	       			document.getElementById('alert2').style.display="block";
 	       			document.getElementById('alert1').style.display="none";
+
 	       		}
 	       		else{
-	       			document.getElementById('alert1').style.display="block";	
-	       			document.getElementById('alert2').style.display="none";
+
+  		     		window.location.replace("file:///home/samu/Escritorio/ctin/index.html?r=success");
+	       			if(r==="success"){
+	       				
+	       				document.getElementById('alert1').style.display="block";	
+	       				document.getElementById('alert2').style.display="none";
+	       				setTimeout("window.location.href = 'file:///home/samu/Escritorio/ctin/index.html';",10000);
+	    				
+	       			}
 	       		}
        		}
-       		var body = '{"name": "'+name+'" ,"apppat":"'+apppat+'","appmat":"'+appmat+'","email":"'+email+'","school":"'+school+'","career":"'+career+'","semester":"'+semester+'","languages":"'+languages+'","how":"'+how+'","why":"'+why+'","cv":"'+cv+'","areaId":"'+areaId+'"}';
-       		console.log('body',body);
-       		
+       		var body = '{"name": "'+name+'" ,"apppat":"'+apppat+'","appmat":"'+appmat+'","email":"'+email+'","school":"'+school+'","career":"'+career+'","semester":"'+semester+'","languages":"'+languages+'","how":"'+how+'","why":"'+why+'","areaId":"'+areaId+'"}';
+       		//console.log('body',body);
        		xhttp.send(body);
-       		
        	}
     }
   };
@@ -86,9 +70,6 @@
 (function() {
   'use strict';
   window.addEventListener('load', function() {
-  	//var expresion,correo;
-  	//correo = document.getElementById('validationCustom04');
-  	//expresion = /\w+@\w+\.+[a-z]/;
     var forms = document.getElementsByClassName('needs-validation');
     var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
@@ -96,10 +77,6 @@
           event.preventDefault();
           event.stopPropagation();
         }
-        /*if (!expresion.test(correo)){
-        	alert("correo no válido");
-        	return false;
-        }*/
         form.classList.add('was-validated');
       }, false);
     });

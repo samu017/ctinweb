@@ -36,45 +36,10 @@ a:hover, a:active{
 	height: 30px;
 	overflow: hidden;
 }
-/*background*/
-/*@-webkit-keyframes BACK-MOVE {
-	from {
-		left: 0;
-		top: 0;
-	}
-	to { 
-		left: -10000px;
-		top: -2000px;
-	}
-}
 
-#background {
-	background: black url(../img/Fondo.png) repeat 5% 5%;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-		
-	-webkit-animation-name: BACK-MOVE;
-	-webkit-animation-duration: 500s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	-moz-animation-name: BACK-MOVE;
-	-moz-animation-duration: 500s;
-	-moz-animation-timing-function: linear;
-	-moz-animation-iteration-count: infinite;
-	-o-animation-name: BACK-MOVE;
-	-o-animation-duration: 500s;
-	-o-animation-timing-function: linear;
-	-o-animation-iteration-count: infinite;
-	-ms-animation-name: BACK-MOVE;
-	-ms-animation-duration: 500s;
-	-ms-animation-timing-function: linear;
-	-ms-animation-iteration-count: infinite;
- 
-}
-*/
 .circulo {
-     width: 400px;
-     height: 400px;
+     width: 320px;
+     height: 320px;
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      -ms-border-radius: 50%;
@@ -82,8 +47,8 @@ a:hover, a:active{
      border-radius: 50%;
      z-index: 20;
      position: absolute!important;
-     top: 25%;
-     left: 35%;
+     top: 30%;
+     left: 38%;
      right: 0;
 	-webkit-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
 	-moz-box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
@@ -92,34 +57,40 @@ a:hover, a:active{
 	box-shadow: 0px 10px 87px 4px rgba(0,0,0,0.66);
 }
 img.logoinicial{
-    height: 180px;
+    height: 130px;
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 30%;
+    left: 13%;
     right: 0;
     bottom: 0;
     z-index: 25;
 
 }
 img.logoinicial2{
-    height: 300px;
     width: 500px;
     margin-top: 5%;
     margin-left: 10%;
     z-index: 25;
 
 }
-div#one{
-	background-image: url('../img/Fondo.png');
+div.one{
+	background-image: url('../img/degradado.png');
 
     /* Set a specific height */
     min-height: 800px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center ;
+    background-repeat:  no-repeat;
     background-size: cover;
 }
+div#particles-js{
+	width: 100%;
+}
+.particles-js-canvas-el{
+	min-height: 700px;
+}
+
 div#two{
 	width: 100%;
 }
@@ -155,9 +126,10 @@ div#three.is-active {
 .ictin{left: 7%!important;top: 18%!important;}
 
 h1,h4{
+	padding-bottom: 5px;
 	margin-left: 10%!important;
 	margin: auto;
-      border: 10px solid transparent;
+      border: 5px solid transparent;
 	  border-left: 0;
 	  border-top: 0;
 	  border-right: 0;
@@ -184,7 +156,7 @@ h1,h4{
 }
 .h2_form{
 	color: rgb(153,46,83);
-	margin:5% 5% 0 10%; 
+	margin:30% 5% 0 10%; 
 }
  h5{
 	padding: 0 0 5% 0;
@@ -283,18 +255,40 @@ img.convocatoria{
         margin-bottom: 5%;
        }
 .ctinlogo_footer{
-	width: 110px;
-	height: 45px;
+	width: 85px;
 	margin-right: 10px;
 }
+.anio{
+	color: white;
+}
+.footer{
+	margin-right: 0!important;
 
+}
 .footer img:nth-child(odd){
 	width: 180px!important;
 	margin-top: 10%;
 }
+.redes{
+	position: absolute;
+	top:90%;
+	right: 7%;
+	z-index: 1000;
+}
+.redes a{
+	position: fixed;
+	display: block;
+	background:blue;
+	border-radius: 50%;
+	text-decoration: none;
+	list-style: none;
+	
+}
+.redes a img{
+	width: 50px;
+	margin:20px 5px;
 
-
-/*Cambios de imagenes logo ctin, coonvocatoria,faq,logo de CID*/
+}
 
 @media screen and (max-width: 971px) and (min-width: 768px)  {
 	.ctin-sphere{
@@ -305,25 +299,32 @@ img.convocatoria{
  	img.logoinicial2{
  		height: 250px;
  		margin-left: -30px;
- 		margin-top: -10px;
+ 		width: 380px;
  	}
+ 	.imagen_proyectos{
+		padding-top: 5%;
+		width: 350px;
+	}
 }
 @media screen and (max-width: 848px){
 	.circulo{
-		width: 350px;
-		height: 350px;
+		width: 300px;
+		height: 300px;
 		left: 25%;
 		top: 30%;
 	}	
 	img.logoinicial{
-		height: 280px;
+		height: 120px;
 	}
 	img.convocatoria{
 		width: 300px;
 	}
 }
 @media screen and (max-width: 1152px){
-	img.logoinicial2,img.convocatoria{
+	img.logoinicial2{
+		width: 390px;
+	}
+	img.convocatoria{
 		width: 400px;
 	}
 	img.convocatoria{
@@ -361,7 +362,27 @@ img.convocatoria{
 		margin-top: 5%!important;
 	}
 }
-
+@media screen and (max-width: 495px){
+	.faq_img{
+		width: 290px;
+	}
+	img.convocatoria {
+    	width: 260px!important;
+	}
+	img.logoinicial2 {
+    	width: 310px;
+	}
+}
+@media screen and (max-width: 424px) {
+	.circulo {
+	    width: 250px;
+	    height: 250px;
+	    left: 18%;
+	}
+	img.logoinicial {
+    height: 100px;
+}
+}
  #alert1,#alert2{
  	display: none;
  }
